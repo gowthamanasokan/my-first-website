@@ -11,14 +11,48 @@
             margin: 50px auto;
             padding: 20px;
             text-align: center;
+            min-height: 100vh;
+            background: linear-gradient(to bottom, #1e3a8a, #000000);
         }
-        h1 { color: #333; }
-        p { color: #666; line-height: 1.6; }
+        nav {
+            margin-bottom: 40px;
+            padding: 15px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        nav a {
+            margin: 0 15px;
+            color: #e0e7ff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        nav a:hover { color: #93c5fd; }
+        h1 { color: #ffffff; }
+        h2 { color: #e0e7ff; }
+        p { color: #c7d2fe; line-height: 1.6; }
+        section { margin-bottom: 60px; padding-top: 20px; }
     </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>This is my first website hosted on GitHub Pages</p>
-    <p>Welcome to my page!</p>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home">
+        <h1>Hello, World!</h1>
+        <p>This is my first website hosted on GitHub Pages</p>
+        <p>Welcome to my page!</p>
+    </section>
+
+    <section id="about">
+        <h2>About</h2>
+        <p>Learn more about this website and its creator.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Get in touch! You can reach out through your preferred contact method.</p>
+    </section>
 </body>
 </html>
